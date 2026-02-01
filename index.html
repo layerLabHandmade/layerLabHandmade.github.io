@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resin Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f14;
+      color: #eee;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: radial-gradient(circle at top, #2a2a40, #0f0f14);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: #1a1a26;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .card img {
+      width: 100%;
+      display: block;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin: 0 0 0.5rem;
+    }
+    .buy {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.6rem 1rem;
+      background: #8b0000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .buy:hover {
+      background: #b00000;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Your Resin Gallery</h1>
+  <p>Handmade resin pieces • One of a kind</p>
+</header>
+
+<section class="gallery">
+
+  <div class="card">
+    <img src="image1.jpg" alt="Resin piece">
+    <div class="card-content">
+      <h3>Resin Tray</h3>
+      <p>Hand-poured resin artwork.</p>
+      <a class="buy" href="https://www.ebay.co.uk/" target="_blank">Buy on eBay</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="image2.jpg" alt="Resin piece">
+    <div class="card-content">
+      <h3>Resin Pyramid</h3>
+      <p>Unique decorative piece.</p>
+      <a class="buy" href="https://www.ebay.co.uk/" target="_blank">Buy on eBay</a>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
